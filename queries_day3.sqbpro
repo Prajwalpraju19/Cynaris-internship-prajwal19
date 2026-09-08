@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="queries_day3.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="706"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="sales" custom_title="0" dock_id="1" table="4,5:mainsales"/><dock_state state="000000ff00000000fd00000001000000020000039b00000226fc0100000001fb000000160064006f0063006b00420072006f007700730065003101000000000000039b0000011e00ffffff000002580000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="sales" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="71"/><column index="2" value="98"/><column index="3" value="44"/><column index="4" value="57"/><column index="5" value="44"/><column index="6" value="43"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- 1. COUNT - Total customers
+SELECT COUNT(*) AS total_customers
+FROM sales;
+
+-- 2. COUNT - Customers by region
+SELECT region, COUNT(*) AS customer_count
+FROM sales
+GROUP BY region;
+
+-- 3. COUNT - Customers by category
+SELECT category, COUNT(*) AS category_count
+FROM sales
+GROUP BY category;
+
+-- 4. COUNT - Sales by month
+SELECT month, COUNT(*) AS monthly_count
+FROM sales
+GROUP BY month;
+
+-- 5. COUNT - Completed sales
+SELECT COUNT(*) AS completed_sales
+FROM sales
+WHERE status = 'Completed';
+
+-- 6. COUNT - Sales by category and status
+SELECT category, status, COUNT(*) AS total_sales
+FROM sales
+GROUP BY category, status;
+
+-- 7. HAVING - Months with more than 1 sale
+SELECT month, COUNT(*) AS total_sales
+FROM sales
+GROUP BY month
+HAVING COUNT(*) &gt; 1;
+
+-- 8. HAVING - Religions with more than 5 customers
+SELECT region, COUNT(*) AS total_customers
+FROM sales
+GROUP BY region
+HAVING COUNT(*) &gt; 5;
+
+-- GROUP BY category and month
+SELECT category, month, COUNT(*) AS total_sales
+FROM sales
+GROUP BY category, month;
+
+-- WINDOW FUNCTION - SUM OVER()
+SELECT
+    customer_id,
+    customer_name,
+    category,
+    SUM(customer_id) OVER() AS total_customer_id
+FROM sales;</sql><current_tab id="0"/></tab_sql></sqlb_project>
