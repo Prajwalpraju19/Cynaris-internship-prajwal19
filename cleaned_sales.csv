@@ -1,0 +1,11 @@
+sale_id,customer_name,product,category,quantity,price,city
+1,Rahul,Laptop,Electronics,1,55000.0,Bangalore
+2,Priya,Phone,Electronics,2,25000.0,Mumbai
+3,Arun,Chair,Furniture,4,3500.0,Bangalore
+4,Sneha,Laptop,Electronics,1,60000.0,Delhi
+5,Kiran,Table,Furniture,2,7000.0,Chennai
+6,Anita,Phone,Electronics,1,30000.0,Bangalore
+7,Vijay,Pen,Stationery,10,50.0,Mumbai
+8,Meena,Notebook,Stationery,5,100.0,Delhi
+9,Ravi,Desk,Furniture,1,9000.0,Bangalore
+10,Pooja,Phone,Electronics,3,22000.0,Chennai
