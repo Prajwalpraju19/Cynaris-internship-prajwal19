@@ -1,0 +1,21 @@
+route_id,route_name,start_stop,end_stop,distance_km,scheduled_duration_min,frequency_per_day,peak_hours,off_peak_hours,bus_type,capacity,is_ac,zone
+R01,Tambaram–Koyambedu,Tambaram,Koyambedu,42.3,95,24,6,4,Volvo,52,Yes,South-West
+R02,Anna Nagar–Sholinganallur,Anna Nagar Tower,Sholinganallur,31.7,75,20,5,3,MTC,60,No,North-South
+R03,Central–Tambaram,Chennai Central,Tambaram,38.9,85,30,8,5,MTC,60,No,Central-South
+R04,T-Nagar–Ambattur,T-Nagar,Ambattur,28.4,65,22,6,4,MTC,60,No,Central-North
+R05,Guindy–Perambur,Guindy,Perambur,24.6,55,18,5,3,MTC,60,No,Inner
+R06,Adyar–Avadi,Adyar,Avadi,49.1,110,14,4,2,Volvo,52,Yes,East-North
+R07,Velachery–Poonamallee,Velachery,Poonamallee,36.2,80,16,5,3,MTC,60,No,South-West
+R08,Saidapet–Thiruvottiyur,Saidapet,Thiruvottiyur,33.8,78,19,6,4,MTC,60,No,Central-North
+R09,Pallavaram–Madhavaram,Pallavaram,Madhavaram,44.5,100,12,3,2,Volvo,52,Yes,South-North
+R10,Chromepet–Padi,Chromepet,Padi,29.3,68,20,6,4,MTC,60,No,South-North
+R11,Porur–Royapuram,Porur,Royapuram,27.9,62,21,7,5,MTC,60,No,West-North
+R12,Meenambakkam–Broadway,Meenambakkam,Broadway,21.4,50,25,8,6,AC MTC,48,Yes,Airport-Central
+R13,Kodambakkam–Kolathur,Kodambakkam,Kolathur,23.7,56,17,5,3,MTC,60,No,Central-North
+R14,Vadapalani–Ennore,Vadapalani,Ennore,38.1,88,13,4,2,MTC,60,No,Central-NorthEast
+R15,Ashok Nagar–Redhills,Ashok Nagar,Redhills,31.6,73,15,4,2,MTC,60,No,West-North
+R16,Medavakkam–Ponneri,Medavakkam,Ponneri,52.4,115,10,3,1,Volvo,52,Yes,South-North
+R17,Besant Nagar–Thirumangalam,Besant Nagar,Thirumangalam,29.8,67,18,5,3,MTC,60,No,East-West
+R18,Nanganallur–Tiruvallur,Nanganallur,Tiruvallur,46.7,105,11,3,2,Volvo,52,Yes,South-North
+R19,Selaiyur–Manali,Selaiyur,Manali,41.2,93,13,4,2,MTC,60,No,South-North
+R20,Chitlapakkam–Minjur,Chitlapakkam,Minjur,48.9,108,9,2,1,MTC,60,No,South-North
